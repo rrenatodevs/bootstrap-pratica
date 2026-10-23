@@ -8,37 +8,219 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="galeria.html">Galeria</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="dados.html">Dados</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contato.html">Contato</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sobre.html">Sobre</a>
-        </li>
-      </ul>
-      <form class="d-flex ms-auto">
-        <input class="form-control me-2" type="Search" placeholder="Pesquisar" aria-label="Search">
-        <button class="btn btn-primary" type="submit">Procurar</button>
-      </form>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Saúde e Bem-Estar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dados.html">Dados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="Search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Procurar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</header>  
+
+<div class="container py-5">
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100 card-arredondado">
+        <img src="img/alimentacao-saudavel.jpg" alt="Prato de refeição saudável" class="card-img-top">
+        <div class="card-body p-4">
+          <h5 class="card-title">Alimentação saudável</h5>
+            <p class="card-text">Descubra hábitos para uma alimentação equilibrada.</p>
+              <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleAlimentos">
+                Saiba mais
+              </button>
+              <div class="modal fade" id="exampleAlimentos" tabindex="-1" aria-labelledby="exampleAlimentosLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleAlimentosLabel">Alimentação saudável</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Uma alimentação equilibrada é essencial para o funcionamento do organismo e contribui para a manutenção da saúde e da disposição no dia a dia.</p>
+  
+                      <p class="fw-bold">Por que é importante?</p>
+  
+                      <p>Os alimentos fornecem energia e nutrientes necessários para diversas funções do corpo. Variar os alimentos e priorizar opções in natura ou minimamente processadas ajuda a compor uma alimentação mais equilibrada.</p>
+  
+                      <p class="fw-bold">Dicas para colocar em prática:</p>
+                        <ul>
+                          <li>Inclua frutas, verduras e legumes na rotina.</li>
+                          <li>Varie as fontes de proteínas, fibras e outros nutrientes.</li>
+                          <li>Prefira água como bebida principal.</li>
+                          <li>Planeje as refeições sempre que possível, respeitando suas necessidades e sua realidade.</li>
+                        </ul>
+                      <p class="fw-bold">Comece aos poucos!</p>
+                      
+                      <p>Não é necessário mudar toda a alimentação de uma vez. Pequenas mudanças consistentes podem ajudar a construir hábitos mais saudáveis ao longo do tempo.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+   </div>
+  
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100 card-arredondado">
+        <img src="img/habitos-saudaveis.jpg" alt="Pessoa fazendo exercícios" class="card-img-top">
+        <div class="card-body p-4">
+          <h5 class="card-title">Hábitos saudáveis</h5>
+            <p class="card-text">Pequenas mudanças para uma rotina melhor.</p>
+              <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleHabitosSaudaveis">
+                Saiba mais
+              </button>
+              <div class="modal fade" id="exampleHabitosSaudaveis" tabindex="-1" aria-labelledby="exampleHabitosSaudaveisLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleHabitosSaudaveisLabel">Hábitos saudáveis</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Uma rotina saudável é construída por meio de pequenas atitudes repetidas ao longo do tempo. Não é necessário transformar toda a sua vida de uma vez: mudanças realistas e consistentes podem ajudar a melhorar a qualidade de vida.</p>
+
+                      <p class="fw-bold">Hábitos que fazem a diferença:</p>
+                        <ul>
+                          <li>Organize sua rotina e estabeleça prioridades.</li>
+                          <li>Procure manter horários regulares para dormir e acordar.</li>
+                          <li>Inclua movimento e pausas durante o dia.</li>
+                          <li>Reserve momentos para lazer, descanso e convivência social.</li>
+                          <li>Defina metas pequenas e possíveis de acompanhar.</li>
+                        </ul>
+                      <p class="fw-bold">Como manter a motivação?</p>
+
+                      <p>Escolha um hábito para começar e acompanhe seu progresso. Se um dia não sair como planejado, retome no seguinte sem transformar um deslize em motivo para desistir.</p>
+                      
+                      <p>O segredo não é buscar uma rotina perfeita, mas encontrar um equilíbrio que funcione para sua realidade. Cada pessoa tem necessidades, limitações e objetivos diferentes.</p>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
     </div>
   </div>
-</nav>  
+
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100 card-arredondado">
+        <img src="img/hidratacao.jpg" alt="Hidratação">
+        <div class="card-body p-4">
+          <h5 class="card-title">Hidratação</h5>
+            <p class="card-text">Saiba por que manter-se hidratado importa.</p>
+              <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleHidratacao">
+                Saiba mais
+              </button>
+              <div class="modal fade" id="exampleHidratacao" tabindex="-1" aria-labelledby="exampleHidratacaoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleHidratacaoLabel">Hidratação</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>A água participa de funções essenciais do organismo, como a regulação da temperatura corporal, o transporte de substâncias e o funcionamento adequado dos órgãos. Manter uma boa hidratação é importante para a saúde ao longo do dia.</p>
+
+                      <p class="fw-bold">Como melhorar sua hidratação:</p>
+                      <ul>
+                        <li>Tenha uma garrafa de água por perto.</li>
+                        <li>Beba água em diferentes momentos do dia, sem esperar sempre sentir sede.</li>
+                        <li>Aumente a atenção à hidratação durante atividades físicas e em dias quentes.</li>
+                        <li>Observe se sua urina está frequentemente muito escura, o que pode ser um sinal de hidratação insuficiente.</li>
+                        <li>Considere que frutas e outros alimentos também contribuem para a ingestão de água.</li>
+                      </ul>
+
+                      <p><strong>Crie uma rotina:</strong> associe o hábito de beber água a atividades diárias, como acordar, fazer refeições e realizar pausas no trabalho ou nos estudos.</p>
+
+                      <p>Manter-se hidratado é fundamental para o bem-estar e o desempenho físico e mental. Dedique alguns minutos do dia para beber água e observe os benefícios que isso traz para o seu corpo.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow-sm h-100 card-arredondado">
+        <img src="img/atividade-fisica.jpg" alt="Atividade física">
+        <div class="card-body p-4">
+          <h5 class="card-title">Atividade física</h5>
+            <p class="card-text">Movimente-se e cuide do corpo diariamente.</p>
+              <button type="button" class="btn btn-outline-success rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleAtividadefísica">
+                Saiba mais
+              </button>
+              <div class="modal fade" id="exampleAtividadefísica" tabindex="-1" aria-labelledby="exampleAtividadefísicaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleAtividadefísicaLabel">Atividade física</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>A prática regular de atividade física pode melhorar o condicionamento, fortalecer músculos e ossos, favorecer o sono e contribuir para a saúde física e mental. Não é necessário começar com exercícios intensos para aproveitar esses benefícios.</p>
+
+                      <p class="fw-bold">Como começar:</p>
+                      <ul>
+                        <li>Experimente caminhadas, dança, bicicleta ou outra atividade de que goste.</li>
+                        <li>Comece com uma intensidade confortável e aumente gradualmente.</li>
+                        <li>Evite permanecer sentado por períodos muito longos sem pausas para se movimentar.</li>
+                        <li>Respeite seus limites e reserve tempo para a recuperação.</li>
+                        <li>Escolha atividades que se encaixem na sua rotina.</li>
+                      </ul>
+
+                      <p><strong>Lembre-se:</strong> aa regularidade é mais importante do que tentar fazer tudo de uma vez. Cada pessoa possui necessidades diferentes, por isso adapte a atividade às suas condições e capacidades.</p>
+
+                      <p>Se você tem alguma condição de saúde ou apresenta sintomas durante o exercício, procure orientação profissional.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     
 <footer>
