@@ -21,6 +21,10 @@ body {
     overflow: hidden;
 }
 
+.row.mb-4 {
+  margin-bottom: 30px !important; 
+}
+
 footer {
     text-align: center;
     color: white;
